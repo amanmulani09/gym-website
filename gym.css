@@ -1,0 +1,187 @@
+/* CSS Resat  */
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Utility Classes */
+
+/* .h-primary{
+    font-size:1.8rem;
+} */
+
+.center{
+    text-align: center;
+}
+
+/* Nevigation Bar Styling */
+
+#navbar{
+    display: flex;
+    position: relative;
+}
+
+#navbar::before{
+
+    content:"";
+    background-color: grey;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+/* Nevigation Bar Image Styling */
+
+#logo img{
+    width:123px;
+    margin:3px 23px;
+}
+
+
+/* Nevigation List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin:43px 23px;
+    font-size:1.8rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    border-radius: 15px;
+    padding:13px;
+    color:white;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;;
+}
+
+/* Home Section Styling */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 387px;
+}
+
+#home::before{
+
+    content:"";
+    background: linear-gradient(rgba(3,3,3,0.4), rgba(3,3,3,0.4)), url(bg.jpg) no-repeat center center/cover;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+    opacity: 0.70;
+}
+
+#home h1{
+    font-size:4.8rem;
+    color:white;
+    text-shadow: 3px 3px 5px black;;
+}
+
+#home p{
+    color:white;
+    font-size:0.9rem;
+    text-shadow: 2px 2px 3px black;
+    margin-top: 23px;
+}
+
+#home button{
+
+    font-size:2rem;
+    padding:13px 23px;
+    border:3px solid grey;
+    border-radius: 9px ;
+    overflow: hidden;
+    margin:13px;
+    background-color:transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color:white;
+    
+}
+
+#home button:hover{
+
+    background-color: grey;
+    color:wheat;
+    border:3px solid grey;
+
+}  
+
+
+/* Plan Section Styling */
+
+#Plans{
+    margin-top:170px;
+    display: flex;
+    background-color: lightsteelblue;
+    width:100%;
+    height: 500px;
+    
+    
+}
+
+#Plans h3{
+
+    font-size:3rem;
+    color:darkslategray;
+    margin-top:23px;
+    
+}
+
+.box{
+
+    background-color: ghostwhite;
+    border:3px solid sienna;
+    width:400px;
+    height: 350px;
+    margin:70px 100px 100px 10px;
+    border-radius:13px;
+    padding:23px 23px;
+    align-self: flex-start;
+}
+
+.box p{
+    text-align: center;
+}
+
+.box h2{
+    font-size:2rem;
+    text-align: center;
+    margin:13px;
+    color:darkred;
+}
+
+#Plans button{
+
+    padding:13px 23px;
+    font-size:1rem;
+    background-color: ghostwhite;
+    margin:13px 33px;
+    border-radius: 19px;
+    color:brown;
+    border:3px solid grey;
+}
+
+#Plans button:hover{
+
+    background-color: wheat;
+}
